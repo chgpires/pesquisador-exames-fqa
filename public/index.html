@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-PT">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FQ · Encontra no exame</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<aside>
+  <a class="brand" href="/" aria-label="Início"><span class="symbol">FQ<span>↗</span></span><strong>Encontra<br>no exame.</strong></a>
+  <div class="aside-body"><p class="eyebrow">O seu arquivo de estudo</p><h2>A matéria encontra<br>a pergunta.</h2><p>Pesquise um tópico e descubra em que exames aparece.</p>
+  <div class="scope"><span>EXAMES NACIONAIS</span><strong>Física e Química A</strong><small>Prova 715 · 10.º e 11.º anos</small></div>
+  <div class="library"><span class="eyebrow">Biblioteca consultada</span><strong id="libraryCount">A consultar…</strong><span id="libraryDetail">A preparar os documentos.</span><button id="refresh" type="button">↻ Atualizar exames na Internet</button><details id="coverage"><summary>Fontes e disponibilidade</summary><div id="sourceDetails"></div></details></div>
+  </div><p class="aside-foot">As respostas começam nos documentos.</p>
+</aside>
+<main>
+  <header><span><i></i> Assistente de pesquisa</span><span class="tag">FQ A / 715</span></header>
+  <section id="intro"><span class="eyebrow">Menos tempo à procura. Mais tempo a estudar.</span><h1>Em que exame<br>saiu este tópico?</h1><p>Escolha um tema. Eu procuro passagens nos enunciados e mostro-lhe onde as encontrar.</p><div class="examples" aria-label="Tópicos sugeridos"><button>Equilíbrio químico</button><button>Energia e movimentos</button><button>Reações ácido-base</button><button>Refração da luz</button></div></section>
+  <section id="conversation" aria-label="Conversa de pesquisa" aria-live="polite" aria-relevant="additions"></section>
+  <section class="composer" aria-label="Nova pesquisa"><form id="searchForm"><label for="topic">O que está a estudar?</label><div class="input-row"><input id="topic" placeholder="Por exemplo: constante de equilíbrio" required minlength="2" maxlength="300" autocomplete="off"><button id="send" type="submit" aria-label="Pesquisar tópico">Pesquisar ↗</button></div><div class="filters"><span>Exames entre</span><label class="sr" for="minimum">Ano inicial</label><input id="minimum" type="number" min="1997" max="2100" value="2022"><span>e</span><label class="sr" for="maximum">Ano final</label><input id="maximum" type="number" min="1997" max="2100" value="2026"><span class="filter-note">Correspondências no texto, com expressões relacionadas.</span></div></form><p class="footnote">Resultados limitados aos PDF que foi possível analisar. Confirme sempre o contexto no enunciado. Não analisa imagens ou gráficos.</p></section>
+</main>
+</body></html>
