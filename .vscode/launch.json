@@ -1,4 +1,7 @@
 {
   "version": "0.2.0",
-  "configurations": [{"name": "Iniciar pesquisador FQA", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/pesquisador.py", "console": "integratedTerminal"}]
+  "configurations": [
+    {"name": "Pré-visualizar versão estática", "type": "node", "request": "launch", "program": "${workspaceFolder}/previsualizar.cjs", "console": "integratedTerminal"},
+    {"name": "Atualizar índice de exames (opcional)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/exportar_indice.py", "args": ["--atualizar"], "console": "integratedTerminal"}
+  ]
 }

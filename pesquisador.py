@@ -284,12 +284,12 @@ def serve(port):
             path = urllib.parse.urlsplit(self.path).path
             if path == '/api/status':
                 return self.send_json(library.status())
-            if path not in ('/','/app.js','/style.css'):
+            if path not in ('/','/app.js','/search.js','/style.css','/library.json'):
                 return self.send_json({'error':'Página não encontrada.'},404)
             name = 'index.html' if path == '/' else path[1:]
             body = (ROOT / 'public' / name).read_bytes()
             self.send_response(200)
-            self.send_header('Content-Type',{'index.html':'text/html','app.js':'text/javascript','style.css':'text/css'}[name]+'; charset=utf-8')
+            self.send_header('Content-Type',{'index.html':'text/html','app.js':'text/javascript','search.js':'text/javascript','style.css':'text/css','library.json':'application/json'}[name]+'; charset=utf-8')
             self.send_header('Content-Length',str(len(body)))
             self.send_header('X-Content-Type-Options','nosniff')
             self.end_headers(); self.wfile.write(body)
